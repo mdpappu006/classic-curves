@@ -1,0 +1,684 @@
+body{
+	font-family: 'Josefin Sans', sans-serif;
+}
+img{
+	width: 100%;
+}
+a{
+	transition: 0.5s;
+	text-decoration: none;
+}
+a:hover{
+	opacity: 0.8!important;
+}
+h2{
+	font-weight: 700;
+	font-size: 40px;
+}
+section#header-section {
+    padding: 10px 0px;
+    background: #fff;
+    box-shadow: 0px 0px 10px #b1b1b1;
+    transition: 0.5s;
+}
+.logo-section img,.service-item img,.payment img,.welcome-right-text img,.footer-top-item a img{
+	width: inherit;
+}
+.logo-section img{
+	height: 100px;
+	transition: 0.5s;
+}
+.nav-section ul {
+    padding: 0;
+    list-style: none;
+    text-align: right;
+    margin-bottom: 0;
+    margin-top: 40px;
+    transition: 0.5s;
+}
+.nav-section ul li {
+    display: inline-block;
+}
+
+.nav-section ul li a {
+    padding: 0px 15px;
+    display: block;
+    color: #000;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+.nav-section ul li:last-child a {
+    padding-right: 0px;
+}
+
+section#header-section.sticky {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+section#header-section.sticky .logo-section img {
+    height: 70px;
+}
+section#header-section.sticky .nav-section ul {
+    margin-top: 25px;
+}
+/*
+==============
+Banner css
+==============
+*/
+.banner-item{
+	position: relative;
+}
+.banner-item .banner-text-1 {
+    position: absolute;
+    left: 20%;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #fff;
+    padding: 25px;
+}
+.banner-item .banner-text-2 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 25px;
+}
+.banner-item h2{
+    font-weight: 600;
+}
+.banner-item .banner-text-2 h2 span{
+    font-size: 85px;
+    font-weight: 700;
+}
+.banner-item a {
+    text-decoration: none;
+    color: #fff;
+    background: #000;
+    padding: 10px 25px;
+    display: inline-block;
+    margin-left: 5px;
+}
+.banner-item a i{
+    margin-left: 10px;
+}
+
+
+/*
+==============
+Welcome css
+==============
+*/
+/* .welcome-right-text p, .welcome-right-text span {
+    color: #5f5f5f;
+}
+.welcome-right-text span {
+	padding: 10px;
+	font-style: italic;
+	margin-bottom: 25px;
+	display: inline-block;
+}
+.welcome-right-text span i {
+	margin-right: 20px;
+}
+*/
+section#new-section {
+    margin-top: 80px;
+}
+.new-item {
+    margin-top: 60px;
+}
+.new-item p {
+    margin-bottom: 10px;
+}
+.new-item h2 {
+    font-weight: 600;
+    font-size: 45px;
+}
+.new-item a {
+    color: #fff;
+    background: #000;
+    padding: 10px 60px;
+    display: inline-block;
+    margin-top: 15px;
+}
+.new-slider-item{
+	text-align: center;
+	font-weight: 600;
+}
+.new-slider-item a {
+    color: #000;
+    display: block;
+    margin-bottom: 25px;
+}
+.new-slider-item p {
+    margin-top: 5px;
+    font-size: 14px;
+    position: absolute;
+    bottom: 0px;
+    margin-bottom: 0;
+    text-align: center;
+    width: 100%;
+}
+
+.new-slider-item a img{
+	transition: 0.9s;
+}
+.new-slider-item a:hover img{
+	opacity: 0.5;
+}
+
+
+/*
+==============
+Shop section css
+==============
+*/
+section#shop-section {
+    margin-top: 80px;
+}
+.shop-text h3 {
+    margin-top: 15px;
+    font-size: 30px;
+}
+.shop-text a {
+    display: inline-block;
+    color: #444;
+    border-bottom: 1px solid #444;
+}
+.shop-text p {
+    text-align: left!important;
+    margin-bottom: 15px!important;
+}
+section#shop-section h2{
+    text-align: center;
+    margin-bottom: 20px;
+}
+section#shop-section p {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+
+/*
+==============
+Service section css
+==============
+*/
+section#about-section-header{
+	background: url(../img/breadcrumb_bg_image.jpg) no-repeat;
+	background-size: cover;
+	width: 100%;
+	height: 200px;
+}
+.about-header-text {
+    text-align: center;
+    margin-top: 50px;
+    color: #fff;
+}
+.about-header-text a{
+	color: #fff;
+}
+#about-us-section{
+	background: url('../img/promo_images_1.jpg') no-repeat;
+	background-size: cover;
+	width: 100%;
+	height: 600px;
+	position: relative;
+}
+
+#about-us-section:after{
+	content: '';
+	background: #fff;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0.7;
+}
+.about-us-text {
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    text-align: center;
+}
+.about-us-text h2{
+   font-size: 50px;
+   font-weight: 700;
+}
+.about-us-text p{
+   font-size: 30px;
+   font-weight: 600;
+   margin-bottom: 0;
+}
+
+
+/*
+==============
+Service section css
+==============
+*/
+/* section#service-section {
+    text-align: center;
+    margin-top: 70px;
+    background: #efefef;
+    padding: 60px 0px;
+}
+section#service-section p{
+    color: #5f5f5f;
+    margin-bottom: 60px;
+    padding: 10px 100px;
+}
+section#service-section .service-item p{
+    margin-bottom: 0px;
+    padding: 10px 30px;
+}
+.service-item a {
+    color: #000;
+}
+.service-item h3 {
+    margin-top: 25px;
+}  
+.service-item img{
+	transition: 0.5s;
+}
+.service-item:hover img{
+	transform: scale(1.1);
+} */
+
+
+
+/*
+==============
+Article section css
+==============
+*/
+/* #article-section{
+	text-align: center;
+	margin-top: 50px;
+    padding: 60px 0px;
+}
+#article-section p{
+	color: #5f5f5f;
+    margin-bottom: 50px;
+    padding: 10px 100px;
+}
+.article-text span {
+    margin-top: 10px;
+    display: block;
+    margin-bottom: 10px;
+    line-height: 2;
+    font-size: 17px;
+}
+
+.article-item {
+    border: 1px solid #d4d4d4;
+}
+
+.article-text p {
+    margin-bottom: 0px!important;
+    padding: 0px!important;
+    margin-top: 15px;
+}
+.article-text a {
+    color: #fff;
+    background: #000;
+    padding: 10px 50px;
+    display: inline-block;
+    margin: 30px 0px;
+}
+.article-text {
+    background: #fff;
+    z-index: 1;
+    width: 90%;
+    position: relative;
+    margin: 0 auto;
+    margin-top: -30px;
+    box-shadow: 0px 0px 5px #b1b0b0;
+    transition: 0.3s;
+}
+.article-item-img{
+	overflow: hidden;
+}
+.article-item img{
+	transition: 0.3s;
+}
+.article-item:hover img{
+	transform: scale(1.2);
+}
+.article-item:hover .article-text{
+	margin-top: -45px;
+}
+ */
+
+/*
+==============
+Testimonial section css
+==============
+*/
+/* #testimonial-section {
+    background: url(../img/quote-parallax-bg.png) no-repeat;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-size: cover;
+    padding: 90px 0px;
+}
+#testimonial-section:after {
+    content: "";
+    position: absolute;
+    background: #fff;
+    opacity: 0.7;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.testimonial-section-start {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+}
+
+.testimonial-section-start h2 {
+    margin-bottom: 40px;
+}
+
+.testimonial-section-start i {
+    margin-bottom: 20px;
+    background: #000;
+    color: #fff;
+    padding: 20px;
+    border-radius: 50%;
+}
+
+.testimonial-item p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+ */
+
+/*
+==============
+Get in touch section css
+==============
+*/
+
+section#get-in-touch{
+	padding: 30px 0px;
+}
+
+section#get-in-touch h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    border-top: 2px solid #ddd;
+    padding-top: 50px;
+}
+section#get-in-touch p.lorem {
+    text-align: center;
+    margin-bottom: 50px;
+    color: #5f5f5f;
+}
+.get-in-right h5 {
+    margin: 20px 0px 0px;
+}
+#get-in-touch a {
+    color: #7f7f7f;
+    display: inline-block;
+    margin-top: 5px;
+}
+input[type="text"] {
+    width: 50%;
+    padding: 5px;
+    text-transform: capitalize;
+    color: #000;
+    margin-bottom: 10px;
+}
+input[type="text"]:focus {
+    outline: none;
+}
+.get-in-left a.submit{
+	color: #fff!important;
+    background: #000;
+    padding: 7px 30px;
+    display: inline-block;
+}
+
+
+/*
+==============
+Footer section css
+==============
+*/
+.footer-top {
+    background: #efefef;
+    padding: 60px 0px;
+}
+.first-footer-p{
+	margin-top: 25px;
+}
+.footer-top-item ul {
+    padding: 20px;
+}
+
+.footer-top-item ul li a {
+    color: #000;
+    font-size: 18px;
+    display: block;
+    padding: 5px 0px;
+}
+.follow-us a {
+    background: #fff;
+    color: #000;
+    padding: 5px 12px;
+    display: inline-block;
+    transition: 0.5s;
+}
+.follow-us a:hover {
+    background: #000;
+    color: #fff!important;
+}
+
+.footer-bottom {
+    background: #000;
+    color: #fff;
+    padding: 20px 0px;
+}
+.copyright p{
+	margin-bottom: 0;
+    margin-top: 5px;
+}
+.payment {
+    text-align: right;
+}
+
+
+
+/* Banner slider css part */
+section#banner-section,.new-item-slider{
+	position: relative;
+}
+section#banner-section .owl-nav{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+}
+section#banner-section .owl-nav button.owl-prev {
+    left: 20px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+section#banner-section .owl-nav button.owl-next {
+    right: 20px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+section#banner-section .owl-nav button:focus {
+    outline: none;
+}
+
+section#banner-section .owl-nav button.owl-prev span, section#banner-section .owl-nav button.owl-next span  {
+    color: #444;
+    font-size: 60px;
+    width: 40px;
+    display: block;
+    height: 40px;
+    line-height: 30px;
+}
+section#banner-section .owl-dots {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+}
+section#banner-section .owl-dots button.owl-dot {
+    background: #444;
+    width: 15px;
+    height: 15px;
+    margin: 5px;
+    border-radius: 50%;
+}
+section#banner-section .owl-dots button.owl-dot:focus {
+    outline: none;
+}
+section#banner-section .owl-dots button.owl-dot.active {
+    background: #fff;
+}
+
+
+/* New slider */
+.new-item-slider .owl-nav{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+}
+.new-item-slider .owl-nav button.owl-prev {
+    left: 12px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.new-item-slider .owl-nav button.owl-next {
+    right: 0px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.new-item-slider .owl-nav button:focus {
+    outline: none;
+}
+.new-item-slider .owl-nav button.owl-prev span, .new-item-slider .owl-nav button.owl-next span  {
+    color: #444;
+    font-size: 50px;
+    background: #fff;
+    width: 40px;
+    display: block;
+    height: 40px;
+    line-height: 40px;
+}
+
+
+
+/* Testimonial slider */
+/* .testimonial-slider .owl-dots {
+    text-align: center;
+}
+
+.testimonial-slider .owl-dots button.owl-dot {
+    background: #797878;
+    width: 20px;
+    height: 5px;
+    margin: 5px;
+}
+.testimonial-slider .owl-dots button.owl-dot:focus {
+    outline: none;
+}
+.testimonial-slider .owl-dots button.owl-dot.active {
+    background: #000;
+} */
+
+
+
+
+/*
+===========================
+scroll to top 
+===========================
+*/
+.scrollToTop {
+    width: 50px;
+    height: 50px;
+    color: #ffffff;
+    z-index: 999;
+    bottom: 25px;
+    right: 25px;
+    position: fixed;
+    -webkit-transform: translateY(150px);
+    -ms-transform: translateY(150px);
+    transform: translateY(150px);
+    background: #636262;
+    text-align: center;
+    font-size: 16px;
+}
+.scrollToTop:hover {
+    opacity: 1!important;
+}
+.scrollToTop.active {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+    animation: bounceInDown 2s;
+    -webkit-animation: bounceInDown 2s;
+    -moz-animation: bounceInDown 2s;
+}
+
+@keyframes bounceInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-2000px);
+    transform: translateY(-2000px)
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: translateY(30px);
+    transform: translateY(30px)
+  }
+
+  80% {
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px)
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0)
+  }
+}
+
+.bounceInDown {
+  -webkit-animation-name: bounceInDown;
+  animation-name: bounceInDown
+}
+.fa-angle-up{
+    color: #fff;
+    font-size: 30px;
+    line-height: 1.7;
+}
+/*
+==================================
+Scroll to top css end
+===================================
+*/
