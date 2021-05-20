@@ -3,7 +3,16 @@ window.addEventListener("scroll",function(){
     header.classList.toggle("sticky", window.scrollY > 0);
 })
 
-
+$('i.fa-bars').on('click', function(){
+    $('.nav-section ul').toggleClass('active');
+    $('.fa-bars').toggleClass('active');
+    $('.fa-times').toggleClass('active');
+})
+$('i.fa-times').on('click',function(){
+    $('.nav-section ul').removeClass('active');
+    $('.fa-bars').removeClass('active');
+    $('.fa-times').removeClass('active');
+})
 // Banner section js 
 $('.banner-section.owl-carousel').owlCarousel({
     loop:false,
@@ -76,27 +85,27 @@ $('.new-item-slider .owl-carousel').owlCarousel({
 })
 
 // Testimonial slider section js 
-$('.testimonial-slider.owl-carousel').owlCarousel({
-    loop:true,
-    margin:15,
-    nav:false,
-    dots: true,
-    mouseDrag: true,
-    autoplay: false,
-    autoplayTimeout: 1500,
-    autoplayHoverPause: true,
-    responsive:{
-        0:{
-            items:1
-        },
-        600:{
-            items:1
-        },
-        1000:{
-            items:1
-        }
-    }
-})
+// $('.testimonial-slider.owl-carousel').owlCarousel({
+//     loop:true,
+//     margin:15,
+//     nav:false,
+//     dots: true,
+//     mouseDrag: true,
+//     autoplay: false,
+//     autoplayTimeout: 1500,
+//     autoplayHoverPause: true,
+//     responsive:{
+//         0:{
+//             items:1
+//         },
+//         600:{
+//             items:1
+//         },
+//         1000:{
+//             items:1
+//         }
+//     }
+// })
 
 
 

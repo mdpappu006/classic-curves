@@ -1,19 +1,19 @@
 body{
-	font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
 }
 img{
-	width: 100%;
+    width: 100%;
 }
 a{
-	transition: 0.5s;
-	text-decoration: none;
+    transition: 0.5s;
+    text-decoration: none;
 }
 a:hover{
-	opacity: 0.8!important;
+    opacity: 0.8!important;
 }
 h2{
-	font-weight: 700;
-	font-size: 40px;
+    font-weight: 700;
+    font-size: 40px;
 }
 section#header-section {
     padding: 10px 0px;
@@ -22,11 +22,11 @@ section#header-section {
     transition: 0.5s;
 }
 .logo-section img,.service-item img,.payment img,.welcome-right-text img,.footer-top-item a img{
-	width: inherit;
+    width: inherit;
 }
 .logo-section img{
-	height: 100px;
-	transition: 0.5s;
+    height: 100px;
+    transition: 0.5s;
 }
 .nav-section ul {
     padding: 0;
@@ -63,13 +63,23 @@ section#header-section.sticky .logo-section img {
 section#header-section.sticky .nav-section ul {
     margin-top: 25px;
 }
+
+.fa-bars,.fa-times{
+    position: absolute;
+    right: 10px;
+    top: 35px;
+    font-size: 25px;
+    display: none;
+    cursor: pointer;
+}
+
 /*
 ==============
 Banner css
 ==============
 */
 .banner-item{
-	position: relative;
+    position: relative;
 }
 .banner-item .banner-text-1 {
     position: absolute;
@@ -115,13 +125,13 @@ Welcome css
     color: #5f5f5f;
 }
 .welcome-right-text span {
-	padding: 10px;
-	font-style: italic;
-	margin-bottom: 25px;
-	display: inline-block;
+    padding: 10px;
+    font-style: italic;
+    margin-bottom: 25px;
+    display: inline-block;
 }
 .welcome-right-text span i {
-	margin-right: 20px;
+    margin-right: 20px;
 }
 */
 section#new-section {
@@ -145,8 +155,8 @@ section#new-section {
     margin-top: 15px;
 }
 .new-slider-item{
-	text-align: center;
-	font-weight: 600;
+    text-align: center;
+    font-weight: 600;
 }
 .new-slider-item a {
     color: #000;
@@ -164,10 +174,10 @@ section#new-section {
 }
 
 .new-slider-item a img{
-	transition: 0.9s;
+    transition: 0.9s;
 }
 .new-slider-item a:hover img{
-	opacity: 0.5;
+    opacity: 0.5;
 }
 
 
@@ -204,14 +214,14 @@ section#shop-section p {
 
 /*
 ==============
-Service section css
+About us page section css
 ==============
 */
 section#about-section-header{
-	background: url(../img/breadcrumb_bg_image.jpg) no-repeat;
-	background-size: cover;
-	width: 100%;
-	height: 200px;
+    background: url(../img/breadcrumb_bg_image.jpg) no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 200px;
 }
 .about-header-text {
     text-align: center;
@@ -219,46 +229,281 @@ section#about-section-header{
     color: #fff;
 }
 .about-header-text a{
-	color: #fff;
+    color: #fff;
 }
 #about-us-section{
-	background: url('../img/promo_images_1.jpg') no-repeat;
-	background-size: cover;
-	width: 100%;
-	height: 600px;
-	position: relative;
+    width: 100%;
+    /* height: 700px; */
+    position: relative;
+    padding-top: 60px;
 }
 
-#about-us-section:after{
-	content: '';
-	background: #fff;
-	width: 100%;
-	height: 100%;
-	position: absolute;
-	top: 0;
-	left: 0;
-	opacity: 0.7;
-}
-.about-us-text {
-    position: absolute;
-    z-index: 1;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%,-50%);
+/* #about-us-section:after{
+    content: '';
+    background: #fff;
     width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.7;
+} */
+.about-us-text {
     text-align: center;
+    position: relative;
 }
-.about-us-text h2{
-   font-size: 50px;
-   font-weight: 700;
+i.fas.fa-quote-left {
+    position: absolute;
+    top: 65px;
+    left: 0;
+}
+i.fas.fa-quote-right {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.about-us-text h2 {
+    font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    position: relative;
+}
+.about-us-text h2:after{
+    position: absolute;
+    content: '';
+    background: #000;
+    width: 150px;
+    height: 5px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
 }
 .about-us-text p{
    font-size: 30px;
    font-weight: 600;
    margin-bottom: 0;
 }
+.about-us-text ul {
+    text-align: left;
+    font-size: 18px;
+    padding: 0;
+    padding-top: 30px;
+}
+.about-us-text ul li{
+    line-height: 1.7;
+}
+.about-us-right img {
+    margin-top: 50px;
+}
+
+/*
+==============
+What we do section css
+==============
+*/
+section#what-we-section h2,#office-section h2,#team-section h2 {
+    font-size: 50px;
+    text-align: center;
+    margin-top: 80px;
+    position: relative;
+    padding-bottom: 10px;
+}
+section#what-we-section p,#team-section p {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+#office-section h2:after{
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 5px;
+    background: #000;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.what-we-text {
+    background: #000;
+    color: #fff;
+    padding: 50px 20px;
+    text-align: center;
+}
+.what-we-text p{
+    margin-bottom: 0px!important; 
+}
+.team-member-text {
+    text-align: center;
+}
+.team-member-text h3 {
+    margin-top: 15px;
+}
+.team-member-text p {
+    margin-bottom: 10px!important;
+}
+
+/*
+==============
+Contact page section css
+==============
+*/
+section#contact-us-section {
+    padding: 50px 0px;
+}
+section#contact-us-section h3 {
+    margin-bottom: 15px;
+    font-size: 35px;
+}
+
+iframe{
+    width: 100%;
+    height: 500px;
+    margin-top: 50px;
+}
+.contact-form input {
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+.contact-form textarea{
+    width: 100%;
+    text-indent: 4px;
+}
+.contact-form label{
+    font-weight: 600;
+    font-size: 18px;
+}
+.contact-form label span{
+    color: red;
+    margin-left: 3px;
+    display: inline-block;
+}
+button.btn.right {
+    width: 100%;
+    background: #444;
+    color: #fff;
+    font-size: 22px;
+    border: none;
+    padding: 10px;
+    margin-top: 15px;
+}
+button.btn.right:focus,.contact-form textarea:focus {
+    box-shadow: inherit;
+    outline: none;
+}
 
 
+/*
+==============
+Shopping page section css
+==============
+*/
+#shopping-section h2 {
+    text-align: center;
+    margin: 30px 0px;
+    padding: 30px 0px;
+    border-bottom: 1px solid #ddd;
+}
+.categories {
+    margin-bottom: 30px;
+}
+.accordion-item h2 {
+    padding: 0px!important;
+    margin: 0px!important;
+}
+
+.accordion-item button:focus {
+    outline: none!important;
+    box-shadow: inherit!important;
+    background: transparent!important;
+    border: none;
+}
+.accordion-body ul{
+    padding: 0;
+    list-style: none;
+}
+.accordion-body ul input{
+    width: inherit;
+    margin-right: 15px;
+}
+.accordion-body ul li a{
+    color: #444;
+    font-size: 14px;
+}
+.accordion-button:not(.collapsed) {
+    color: #444;
+    background-color: #fff;
+}
+.shopping-left {
+    position: sticky;
+    top: 90px;
+}
+.shopping-right-item {
+    border: 1px solid #ddd;
+    transition: 0.5s;
+}
+.shopping-right-item:hover {
+    box-shadow: 0px 0px 5px #b5b0b0;
+}
+.shopping-item-text {
+    padding: 10px;
+}
+.shopping-item-img img {
+    width: 100%;
+    height: 380px;
+}
+.shopping-item-img {
+    position: relative;
+    border-bottom: 1px solid #ddd;
+}
+img.hide {
+    /* display: none; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    transition: 0.3s;
+}
+.shopping-right-item:hover img.hide{
+    /* display: block; */
+    width: 100%;
+}
+
+.shopping-item-text h3 {
+    margin-top: 15px;
+    margin-bottom: 0px;
+}
+.shopping-item-text a {
+    color: #000;
+}
+
+.shopping-item-text > p {
+    display: inline-block;
+    color: #734525;
+    font-size: 25px;
+}
+a.add-cart {
+    background: #000;
+    color: #fff;
+    display: inline-block;
+    padding: 5px 10px;
+    margin-left: 20px;
+    transition: 0.5s;
+}
+/* .shopping-right-item:hover a.add-cart{
+    opacity: 1;
+    visibility: visible;
+} */
+span.star {
+    display: block;
+    color: #ffa621;
+    margin-bottom: 10px;
+}
+
+.shopping-item-text a p {
+    margin-bottom: 5px;
+}
 /*
 ==============
 Service section css
@@ -286,10 +531,10 @@ section#service-section .service-item p{
     margin-top: 25px;
 }  
 .service-item img{
-	transition: 0.5s;
+    transition: 0.5s;
 }
 .service-item:hover img{
-	transform: scale(1.1);
+    transform: scale(1.1);
 } */
 
 
@@ -300,12 +545,12 @@ Article section css
 ==============
 */
 /* #article-section{
-	text-align: center;
-	margin-top: 50px;
+    text-align: center;
+    margin-top: 50px;
     padding: 60px 0px;
 }
 #article-section p{
-	color: #5f5f5f;
+    color: #5f5f5f;
     margin-bottom: 50px;
     padding: 10px 100px;
 }
@@ -344,16 +589,16 @@ Article section css
     transition: 0.3s;
 }
 .article-item-img{
-	overflow: hidden;
+    overflow: hidden;
 }
 .article-item img{
-	transition: 0.3s;
+    transition: 0.3s;
 }
 .article-item:hover img{
-	transform: scale(1.2);
+    transform: scale(1.2);
 }
 .article-item:hover .article-text{
-	margin-top: -45px;
+    margin-top: -45px;
 }
  */
 
@@ -413,7 +658,7 @@ Get in touch section css
 */
 
 section#get-in-touch{
-	padding: 30px 0px;
+    padding: 30px 0px;
 }
 
 section#get-in-touch h2 {
@@ -435,18 +680,17 @@ section#get-in-touch p.lorem {
     display: inline-block;
     margin-top: 5px;
 }
-input[type="text"] {
+input{
     width: 50%;
     padding: 5px;
-    text-transform: capitalize;
     color: #000;
     margin-bottom: 10px;
 }
-input[type="text"]:focus {
+input:focus {
     outline: none;
 }
 .get-in-left a.submit{
-	color: #fff!important;
+    color: #fff!important;
     background: #000;
     padding: 7px 30px;
     display: inline-block;
@@ -463,7 +707,7 @@ Footer section css
     padding: 60px 0px;
 }
 .first-footer-p{
-	margin-top: 25px;
+    margin-top: 25px;
 }
 .footer-top-item ul {
     padding: 20px;
@@ -493,7 +737,7 @@ Footer section css
     padding: 20px 0px;
 }
 .copyright p{
-	margin-bottom: 0;
+    margin-bottom: 0;
     margin-top: 5px;
 }
 .payment {
@@ -504,7 +748,7 @@ Footer section css
 
 /* Banner slider css part */
 section#banner-section,.new-item-slider{
-	position: relative;
+    position: relative;
 }
 section#banner-section .owl-nav{
     position: absolute;
