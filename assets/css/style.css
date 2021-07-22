@@ -620,4 +620,9 @@ Add to cart container css
     height: 100%;
     width: 400px;
     background: #fff;
+    z-index: 9999;
+}
+
+.item-product-details img{
+    width: 80px;
 }
