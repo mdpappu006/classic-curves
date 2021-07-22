@@ -605,3 +605,19 @@ scroll to top
 Scroll to top css end
 ===================================
 */
+
+
+/*
+==================================
+Add to cart container css
+===================================
+*/
+
+.add-to-cart{
+    position: fixed;
+    top: 90px;
+    right: 0;
+    height: 100%;
+    width: 400px;
+    background: #fff;
+}
