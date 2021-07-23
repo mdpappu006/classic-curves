@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="assets/css/responsive.css">
 </head>
 
-<body class="scrollOver">
+<body>
 
     <a href="#0" class="scrollToTop"><i class="fas fa-angle-up"></i></a>
 
@@ -181,7 +181,7 @@
                                         </a>
                                         <span class="star"><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></span>
                                         <p>$<span>40.00</span></p>
-                                        <a href="#" class="add-cart">Add to cart</a>
+                                        <a href="javascript:" class="add-cart">Add to cart</a>
 
                                     </div>
                                 </div>
@@ -445,8 +445,6 @@
     <script src="https://www.paypal.com/sdk/js?client-id=AQ8vrIljDZzcgrlUYV9fr5iDy7VeK8M4AU4tIji_q2CNLzs3Y7RvTGbqKXkLDseI-UQ9NOoxCj0wxFzR&disable-funding=credit,card
     "></script>
 
-    <div class="bg-hover"></div>
-
     <div class="add-to-cart">
         <div class="container">
             <div class="row">
@@ -519,7 +517,7 @@
         </div>
     </div>
 
-
+    <div class="bg-hover"></div>
     <!-- Paypal Checkout -->
     <script>
         var amount = 30;
@@ -542,6 +540,21 @@
         }).render('#paypal-payment-button'); // Display payment options on your web page
     </script>
     <!-- Paypal Checkout -->
+
+
+    <script>
+        $(".add-cart").click(function(){
+            $(".add-to-cart").css("display", "block");
+            $(".bg-hover").css("display", "block");
+            $("body").addClass("scrollOver");
+        });
+        
+        $(".btn-close").click(function(){
+            $(".add-to-cart").css("display", "none");
+            $(".bg-hover").css("display", "none");
+            $("body").removeClass("scrollOver");
+        });
+    </script>
 </body>
 
 </html>
