@@ -16,6 +16,10 @@
     <!-- Google font -->
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
+    <!-- Animation Css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!-- Animation Css -->
+
     <!-- resource css link -->
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
@@ -200,7 +204,7 @@
                                         </a>
                                         <span class="star"><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></span>
                                         <p>$<span>55.00</span></p>
-                                        <a href="#" class="add-cart">Add to cart</a>
+                                        <a href="javascript:" class="add-cart">Add to cart</a>
                                     </div>
                                 </div>
                             </div>
@@ -218,7 +222,7 @@
                                         </a>
                                         <span class="star"><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></span>
                                         <p>$<span>30.00</span></p>
-                                        <a href="#" class="add-cart">Add to cart</a>
+                                        <a href="javascript:" class="add-cart">Add to cart</a>
                                     </div>
                                 </div>
                             </div>
@@ -238,7 +242,7 @@
                                         </a>
                                         <span class="star"><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></span>
                                         <p>$<span>35.00</span></p>
-                                        <a href="#" class="add-cart">Add to cart</a>
+                                        <a href="javascript:" class="add-cart">Add to cart</a>
                                     </div>
                                 </div>
                             </div>
@@ -256,7 +260,7 @@
                                         </a>
                                         <span class="star"><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></span>
                                         <p>$<span>55.00</span></p>
-                                        <a href="#" class="add-cart">Add to cart</a>
+                                        <a href="javascript:" class="add-cart">Add to cart</a>
                                     </div>
                                 </div>
                             </div>
@@ -274,7 +278,7 @@
                                         </a>
                                         <span class="star"><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></span>
                                         <p>$<span>39.00</span></p>
-                                        <a href="#" class="add-cart">Add to cart</a>
+                                        <a href="javascript:" class="add-cart">Add to cart</a>
                                     </div>
                                 </div>
                             </div>
@@ -294,7 +298,7 @@
                                         </a>
                                         <span class="star"><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></span>
                                         <p>$<span>45.00</span></p>
-                                        <a href="#" class="add-cart">Add to cart</a>
+                                        <a href="javascript:" class="add-cart">Add to cart</a>
                                     </div>
                                 </div>
                             </div>
@@ -312,7 +316,7 @@
                                         </a>
                                         <span class="star"><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></span>
                                         <p>$<span>25.00</span></p>
-                                        <a href="#" class="add-cart">Add to cart</a>
+                                        <a href="javascript:" class="add-cart">Add to cart</a>
                                     </div>
                                 </div>
                             </div>
@@ -330,7 +334,7 @@
                                         </a>
                                         <span class="star"><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></span>
                                         <p>$<span>20.00</span></p>
-                                        <a href="#" class="add-cart">Add to cart</a>
+                                        <a href="javascript:" class="add-cart">Add to cart</a>
                                     </div>
                                 </div>
                             </div>
@@ -445,7 +449,7 @@
     <script src="https://www.paypal.com/sdk/js?client-id=AQ8vrIljDZzcgrlUYV9fr5iDy7VeK8M4AU4tIji_q2CNLzs3Y7RvTGbqKXkLDseI-UQ9NOoxCj0wxFzR&disable-funding=credit,card
     "></script>
 
-    <div class="add-to-cart">
+    <div class="add-to-cart animate__animated animate__fadeInRightBig">
         <div class="container">
             <div class="row">
                 <div class="col-md-12 mt-2  mb-5">
@@ -544,8 +548,7 @@
 
     <script>
         $(".add-cart").click(function(){
-            $(".add-to-cart").css("display", "block");
-            $(".bg-hover").css("display", "block");
+            $(".add-to-cart, .bg-hover").css("display", "block");
             $("body").addClass("scrollOver");
         });
         
